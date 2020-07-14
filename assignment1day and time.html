@@ -1,0 +1,24 @@
+<html>
+<head>
+<body>
+<script>
+var d = new Date(),
+	weekday = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
+	dayOfWeek = weekday[d.getDay()];
+        document.write("Today is:"+dayOfWeek +".");
+      var today=new Date();  
+      var h=today.getHours();
+         document.write("<br>")
+        if(h<12) {  
+      document.write("current time is: "+ h + "AM"+":"+today.getMinutes()+": "+today.getSeconds()); 
+       } 
+      else if(h==12){  
+       document.write("current time is: "+ h + "PM"+":"+today.getMinutes()+": "+today.getSeconds());  
+       }  
+     else{  
+     document.write("current time is: " +h-12 + "PM"+":"+today.getMinutes()+": "+today.getSeconds());
+       }  
+    </script>
+    </body>
+    </head>
+     </html>
